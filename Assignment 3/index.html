@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="icon" href="images/funix-icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03 - Lê Thành Long</title>
+  </head>
+  <body>
+    <!----------------------------Banner------------------------------->
+    <section>
+      <div class="container" id="banner">
+        <img
+          class="banner-img"
+          src="images/banner.jpg"
+          alt="Banner"
+          style="width: 100%"
+        />
+        <div class="banner-info">
+          <p class="fs-1">Lê Thành Long</p>
+          <span>Java Developer</span>
+        </div>
+      </div>
+    </section>
+    <!----------------------------FLEX: Navbar--------------------------->
+    <section id="nav-bar">
+      <nav class="container main-menu">
+        <a class="nav-a-first" href="#about"
+          ><i class="icon icon-user"></i>THÔNG TIN
+        </a>
+        <a class="nav-a-center" href="#job-info"
+          ><i class="icon icon-doc-text-inv"></i>LÝ LỊCH
+        </a>
+        <div id="div-nav-image">
+          <img id="nav-image" src="images/Long.png" alt="Ảnh cá nhân" />
+        </div>
+        <a class="nav-a-center" href="#certificate"
+          ><i class="icon icon-mail-alt"></i>CHỨNG CHỈ
+        </a>
+        <a class="nav-a-last" href="#project"
+          ><i class="icon icon-star-1"></i>DỰ ÁN</a
+        >
+      </nav>
+    </section>
+    <!--------------Mục tiêu nghề nghiệp và thông tin cá nhân--------------->
+    <section id="about">
+      <div class="container">
+        <!-- GRID 1 - Grid item 1: Mục tiêu nghề nghiệp -->
+        <div id="target">
+          <p class="fs-3 fw-bold">Mục tiêu nghề nghiệp</p>
+          <br />
+          <p>
+            Là một sinh viên hoàn thành chứng chỉ doanh nghiệp FUNIX khóa Java
+            và có niềm đam mê với ngành công nghệ thông tin, tôi luôn mong muốn
+            được làm việc trong các doanh nghiệp công nghệ thông tin với vị trí
+            <b>Java Developer</b>, được cống hiến hết mình, hoàn thành tốt nhất
+            các dự án mà công ty giao đồng thời rèn luyện, nâng cao năng lực,
+            đóng góp những kinh nghiệm làm việc mà bản thân có được vào công ty,
+            giúp công ty ngày càng phát triển.
+          </p>
+        </div>
+        <!-- GRID 1 - Grid item 2: Thông tin cá nhân -->
+        <div id="personal-info">
+          <p class="fs-3 fw-bold">Thông tin cá nhân</p>
+          <br />
+          <div class="authentication">
+            <input type="email" id="enter-email" placeholder="Enter email" />
+            <p class="note-email-1">Hãy nhập email để xác thực.</p>
+            <p class="note-email-2 text-danger hidden">
+              Định dạng email chưa đúng. Vui lòng nhập lại.
+            </p>
+            <input type="button" id="btn-submit" value="Submit" />
+          </div>
+          <ul class="personal-info-ul hidden">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 19/04/1986</li>
+            <li><span>Điện thoại</span> : (+84) 902169845</li>
+            <li><span>Email</span> : longltFX19657@funix.edu.vn</li>
+            <li>
+              <span>Địa chỉ</span> : Số 374 Lán Bè, Lam Sơn, Lê Chân, Hải Phòng
+            </li>
+            <li><span>Website</span> : https://funix.edu.vn</li>
+            <br />
+            <li>
+              <a href="#"><i class="icon icon-twitter"></i></a>
+              <a href="#"><i class="icon icon-facebook"></i></a>
+              <a href="#"><i class="icon icon-gplus"></i></a>
+              <a href="#"><i class="icon icon-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--------------Kinh nghiệm, học vấn, hoạt động--------------->
+    <section id="job-info">
+      <div class="container">
+        <!-- GRID 2 - Grid item 1: Kinh nghiệm-->
+        <div class="sub-container-job">
+          <div class="title-job-info fs-3 fw-bold">Kinh nghiệm</div>
+          <div><i class="ic-big ic-toolbox"></i></div>
+          <div class="container-viewmore entity-exp entity-down hidden">
+            <input
+              type="button"
+              class="btn-viewmore btn-viewmore-exp"
+              value="View more"
+            />
+          </div>
+          <div class="comment-job-info comment-exp hidden">
+            <ul>
+              <li>
+                <p class="fw-bold">
+                  Quản lý hành chính - Công ty TNHH Toyota Nankai
+                </p>
+                <em
+                  >2021 -
+                  <p class="text-bg-blue">Hiện tại</p></em
+                >
+                <p>- Quản lý hệ thống ISO, hành chính, văn phòng.</p>
+                <p>- Quản lý An toàn vệ sinh lao động.</p>
+                <p>- Quản lý công tác phòng cháy chữa cháy</p>
+              </li>
+              <br />
+              <li>
+                <p class="fw-bold">
+                  Công nghệ thông tin và Văn phòng - Sở Thông tin và Truyền
+                  thông
+                </p>
+                <p><em>2010 - 2021</em></p>
+                <p>
+                  - Quản trị về công nghệ thông tin, an toàn thông tin, phụ
+                  trách công tác ISO tại cơ quan.
+                </p>
+                <p>- Phụ trách các mảng công tác về tổ chức, nhân sự.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GRID 2 - Grid item 2: Kỹ năng-->
+        <div class="sub-container-job">
+          <div class="title-job-info fs-3 fw-bold">Kỹ năng</div>
+          <div><i class="ic-big ic-tools-2"></i></div>
+          <div class="container-viewmore entity-skill entity-down hidden">
+            <input
+              type="button"
+              class="btn-viewmore btn-viewmore-skill"
+              value="View more"
+            />
+          </div>
+          <div class="comment-job-info comment-skill hidden">
+            <p>HTML/CSS: Fundamental</p>
+            <span class="blue-ruler"></span><span class="grey-ruler"></span
+            ><span class="grey-ruler"></span>
+            <p>Javcascript: Intermediate</p>
+            <span class="blue-ruler"></span><span class="blue-ruler"></span
+            ><span class="grey-ruler"></span>
+            <p>NodeJS: Intermediate</p>
+            <span class="blue-ruler"></span><span class="blue-ruler"></span
+            ><span class="grey-ruler"></span>
+            <p>Bootstrap 5: Fundamental</p>
+            <span class="blue-ruler"></span><span class="grey-ruler"></span
+            ><span class="grey-ruler"></span>
+          </div>
+        </div>
+
+        <!-- GRID 2 - Grid item 3: Ngôn ngữ-->
+        <div class="sub-container-job">
+          <div class="title-job-info fs-3 fw-bold">Ngôn ngữ</div>
+          <div><i class="ic-big ic-mic"></i></div>
+          <div class="container-viewmore entity-language entity-down hidden">
+            <input
+              type="button"
+              class="btn-viewmore btn-viewmore-language"
+              value="View more"
+            />
+          </div>
+          <div class="comment-job-info comment-language hidden">
+            <p>Tiếng Anh-IELTS 5.0</p>
+            <span class="blue-ruler"></span><span class="blue-ruler"></span
+            ><span class="grey-ruler"></span>
+            <p>Tiếng Nhật - JLPT N6</p>
+            <span class="blue-ruler"></span><span class="grey-ruler"></span
+            ><span class="grey-ruler"></span>
+          </div>
+        </div>
+
+        <!-- GRID 2 - Grid item 4: Hoạt động-->
+        <div class="sub-container-job">
+          <div class="title-job-info fs-3 fw-bold">Hoạt động</div>
+          <div><i class="ic-big ic-toolbox"></i></div>
+          <div class="container-viewmore entity-activity entity-down hidden">
+            <input
+              type="button"
+              class="btn-viewmore btn-viewmore-activity"
+              value="View more"
+            />
+          </div>
+          <div class="comment-job-info comment-activity hidden">
+            <ul>
+              <li>
+                <p class="fw-bold">
+                  Bằng khen của Chủ tịch Ủy ban nhân dân thành phố
+                </p>
+                <em>2016 và 2020</em>
+                <p>
+                  Do có thành tích hoàn thành xuất sắc nhiệm vụ công tác năm
+                  2015.
+                </p>
+              </li>
+              <br />
+              <li>
+                <p class="fw-bold">
+                  Bằng khen của Bộ trưởng Bộ Thông tin và Truyền thông
+                </p>
+                <em>2016 và 2020</em>
+                <p>
+                  Do có thành tích xuất sắc quản lý nhà nước Thông tin và Truyền
+                  thông năm 2016, 2020.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GRID 2 - Grid item 5: Học vấn-->
+        <div class="sub-container-job">
+          <div class="title-job-info fs-3 fw-bold">Học vấn</div>
+          <div><i class="ic-big ic-pencil"></i></div>
+          <div class="container-viewmore entity-education entity-down hidden">
+            <input
+              type="button"
+              class="btn-viewmore btn-viewmore-education"
+              value="View more"
+            />
+          </div>
+          <div class="comment-job-info comment-education hidden">
+            <ul>
+              <li>
+                <p class="fw-bold">Kỹ sư Đại học dân lập Hải Phòng</p>
+                <em>2004 - 2009</em>
+                <p>- Chuyên ngành Công nghệ thông tin.</p>
+                <p>- Loại: khá</p>
+              </li>
+              <br />
+              <li>
+                <p class="fw-bold">Cử nhân Đại học Hàng Hải</p>
+                <em>2011 - 2014</em>
+                <p>- Chuyên ngành Quản trị kinh doanh.</p>
+                <p>- Loại: khá</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- GRID 2 - Grid item 6: Sở thích-->
+        <div class="sub-container-job">
+          <div class="title-job-info fs-3 fw-bold">Sở thích</div>
+          <div><i class="ic-big ic-telescope"></i></div>
+          <div class="container-viewmore entity-hobby entity-down hidden">
+            <input
+              type="button"
+              class="btn-viewmore btn-viewmore-hobby"
+              value="View more"
+            />
+          </div>
+          <div class="comment-job-info comment-hobby hidden">
+            <span>
+              <i class="ic-hobby ic-megaphone"></i>
+              <p>Âm nhạc</p>
+            </span>
+            <span
+              ><i class="ic-hobby ic-hotairballoon"></i>
+              <p>Du lịch</p>
+            </span>
+            <span
+              ><i class="ic-hobby ic-book-open"></i>
+              <p>Đọc sách</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------- Chứng chỉ - Giải thưởng------------------>
+    <section id="certificate">
+      <div class="container bg-grey">
+        <!-- ------------ Tiêu đề ----------------------->
+        <div id="certificate-title">
+          <h4 class="fw-bold">Chứng chỉ - Giải thưởng</h4>
+        </div>
+        <!-------------------- GRID 3 ------------------->
+        <div id="certificate-content">
+          <!-- GRID 3 - Grid item 1: Chứng chỉ lập trình web -->
+          <div class="certificates cert-1">
+            <div>
+              <img
+                class="cert-img"
+                src="images/Cert_WEB.png"
+                alt="Chứng chỉ lập trình web"
+              />
+            </div>
+            <div>
+              <p class="fw-bold">CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</p>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.6</p>
+            </div>
+          </div>
+          <!--Đường kẻ ngang-->
+          <div class="certificate-hor-ruler ruler-1"></div>
+          <!-- GRID 3 - Grid item 2: Chứng chỉ lập trình Javcascript -->
+          <div class="certificates cert-2">
+            <div>
+              <img
+                class="cert-img"
+                src="images/Cert_PRF.png"
+                alt="Chứng chỉ lập trình Javcascript"
+              />
+            </div>
+            <div>
+              <p class="fw-bold">CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</p>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.9</p>
+            </div>
+          </div>
+          <!--Đường kẻ ngang-->
+          <div class="certificate-hor-ruler ruler-2"></div>
+          <!-- GRID 3 - Grid item 2: Chứng chỉ thiết kế database -->
+          <div class="certificates cert-3">
+            <div>
+              <img
+                class="cert-img"
+                src="images/Cert_DBI.png"
+                alt="Chứng chỉ thiết kế database"
+              />
+            </div>
+            <div>
+              <p class="fw-bold">CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</p>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------Dự án------------------------->
+    <section id="project">
+      <div class="container">
+        <!----------------- Tiêu đề --------------->
+        <div id="project-title"><h4 class="fw-bold">Dự án</h4></div>
+        <!---------Nội dung các dự án ------------>
+        <div id="project-content">
+          <!-- GRID 4 - grid item 1 - Dự án 1 -->
+          <div class="projects">
+            <div class="div-project-img">
+              <img
+                class="project-img"
+                src="images/Long_project_1.png"
+                alt="Dự án CV cá nhân"
+              />
+            </div>
+            <div class="projects-name">
+              <a
+                href="digital-cv.html"
+                class="anchor-project fw-bold text-uppercase"
+              >
+                CV cá nhân
+              </a>
+            </div>
+            <div class="projects-info">
+              <p><span class="text-bg-blue">2021</span></p>
+              <div><i class="icon-user-1"></i> FUNIX</div>
+              <div><i class="icon-lamp"></i> Developer</div>
+            </div>
+            <table class="projects-description">
+              <tbody>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>HTML, CSS, JS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- GRID 4 - grid item 2 - Dự án 2 -->
+          <div class="projects">
+            <div class="div-project-img">
+              <img
+                class="project-img"
+                src="images/Long_project_2.png"
+                alt="Dự án bổ sung thủ tục hành chính"
+              />
+            </div>
+            <div class="projects-name">
+              <a
+                href="digital-cv.html"
+                class="anchor-project fw-bold text-uppercase"
+              >
+                Bổ sung thủ tục hành chính
+              </a>
+            </div>
+            <div class="projects-info">
+              <p><span class="text-bg-blue">2020 </span></p>
+              <div><i class="icon-user-1"></i> Sở Thông tin</div>
+              <div><i class="icon-lamp"></i> Chuyên viên</div>
+            </div>
+            <table class="projects-description">
+              <tbody>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>Bổ sung một số thủ tục hành chính.</td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>
+                    Xây dựng Kế hoạch, theo dõi, triển khai, đôn đốc đơn vị liên
+                    quan, lập hồ sơ dự án.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>Nhà thầu triển khai.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- GRID 4 - grid item 3 - Dự án 3 -->
+          <div class="projects">
+            <div class="div-project-img">
+              <img
+                class="project-img"
+                src="images/Long_project_3.png"
+                alt="Dự án video thủ tục hành chính"
+              />
+            </div>
+            <div class="projects-name">
+              <a
+                href="digital-cv.html"
+                class="anchor-project fw-bold text-uppercase"
+              >
+                Video thủ tục hành chính
+              </a>
+            </div>
+            <div class="projects-info">
+              <p><span class="text-bg-blue"> 2019 </span></p>
+              <div><i class="icon-user-1"></i> Sở Thông tin</div>
+              <div><i class="icon-lamp"></i> Chuyên viên</div>
+            </div>
+            <table class="projects-description">
+              <tbody>
+                <tr>
+                  <td>Mô tả</td>
+                  <td>Hướng dẫn người dân làm thủ tục hành chính.</td>
+                </tr>
+                <tr>
+                  <td>Nhiệm vụ</td>
+                  <td>Xây dựng kịch bản, lời thoại, cách thức thực hiện.</td>
+                </tr>
+                <tr>
+                  <td>Công nghệ</td>
+                  <td>Photoshop, Powerpoint, công cụ ghép tiếng.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------FOOTER-------------------------->
+    <section id="footer">
+      <div class="container bg-grey">
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="icon icon-facebook"></i> <span>Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="icon icon-linkedin"></i> <span>Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="icon icon-github-circled"></i> <span>Github</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

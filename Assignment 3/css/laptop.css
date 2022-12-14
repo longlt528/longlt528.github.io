@@ -1,0 +1,8 @@
+/* 769px — 1024px: Small screens, laptops */
+
+/* Laptop */
+@media (min-width: 769px) {
+  #certificate > .container > #certificate-content > .ruler-1 {
+    display: none;
+  }
+}

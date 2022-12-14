@@ -1,0 +1,111 @@
+/* 320px — 480px: Mobile devices */
+
+/* Mobile */
+@media (max-width: 500px) {
+  /* nav-bar */
+  .main-menu {
+    flex-direction: column;
+  }
+
+  #div-nav-image {
+    display: none;
+  }
+
+  /* Mục tiêu nghề nghiệp và thông tin */
+  #about > .container {
+    grid-template-columns: auto;
+  }
+
+  #job-info > .container {
+    grid-auto-flow: column;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+  }
+
+  #job-info > .container > .sub-container-job {
+    padding: 30px;
+  }
+
+  /* Sở thích */
+  .hobby-comment {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Chứng chỉ */
+  #certificate > .container > #certificate-title {
+    padding-left: 50px;
+  }
+
+  #certificate > .container > #certificate-content {
+    grid-template-columns: auto;
+  }
+
+  #certificate > .container > #certificate-content > .certificate-hor-ruler {
+    display: inline-block;
+  }
+
+  .certificates {
+    flex-direction: column;
+  }
+
+  .certificates > div > .fw-bold {
+    margin-top: 8px;
+  }
+
+  .cert-img {
+    width: 380px;
+  }
+
+  .cert-1 {
+    border-right: none;
+  }
+
+  /* Dự án */
+  #project > .container > #project-title {
+    padding-left: 50px;
+  }
+
+  #project > .container > #project-content {
+    grid-template-columns: 90%;
+  }
+
+  #project > .container > #project-content > .projects > .projects-info {
+    grid-template-columns: auto auto auto;
+  }
+
+  /* Footer */
+  #footer > .container > ul > li > a > .icon {
+    font-size: 40px;
+  }
+
+  #footer > .container > ul > li > a > span {
+    display: none;
+  }
+
+  /* Digital-cv.html */
+  #digital-cv > .container {
+    grid-template-columns: 90%;
+    gap: 10px;
+  }
+
+  .timeline {
+    grid-row: initial;
+    grid-column: initial;
+  }
+
+  .cv-content {
+    grid-template-columns: auto;
+    justify-items: center;
+    grid-template-columns: 100%;
+  }
+
+  .cv-content-team > div {
+    justify-self: start;
+  }
+
+  .cv-content-timeline,
+  .cv-content-scopes {
+    justify-items: start;
+  }
+}
