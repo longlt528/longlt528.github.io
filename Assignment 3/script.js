@@ -41,16 +41,13 @@ const clickBtnViewmore = function (
   entityClassName,
   keyViewlessId
 ) {
-  console.log(btnClassName);
   const btnObj = document.querySelector(btnClassName);
   if (btnObj.value === "View more") {
-    console.log("view more");
     btnObj.value = "View less";
     removeHidden(commentClassName);
     viewLessEntity(entityClassName);
     keyViewless[keyViewlessId] = 1;
   } else {
-    console.log("view less");
     btnObj.value = "View more";
     addHidden(commentClassName);
     viewMoreEntity(entityClassName);
@@ -114,8 +111,6 @@ btnViewmoreHobby.addEventListener("click", function () {
 const containerJob = document.querySelectorAll(".sub-container-job");
 const containerViewmore = document.querySelectorAll(".container-viewmore");
 const length = containerJob.length;
-
-console.log(containerJob);
 
 containerJob[0].addEventListener("mouseover", function () {
   mouseOver(0);
