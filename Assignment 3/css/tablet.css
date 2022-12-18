@@ -14,9 +14,11 @@
   }
 
   #job-info > .container {
-    grid-auto-flow: column;
+    /* grid-auto-flow: column;
     grid-template-columns: repeat(2, 45%);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, auto); */
+
+    grid-template-columns: repeat(2, 50%);
     gap: 10px;
   }
 

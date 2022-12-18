@@ -17,9 +17,7 @@
   }
 
   #job-info > .container {
-    grid-auto-flow: column;
     grid-template-columns: 90%;
-    grid-template-rows: repeat(6, auto);
     gap: 10px;
   }
 
@@ -71,7 +69,7 @@
   }
 
   #project > .container > #project-content > .projects > .projects-info {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
   }
 
   /* Footer */
@@ -95,9 +93,8 @@
   }
 
   .cv-content {
-    grid-template-columns: auto;
-    justify-items: center;
     grid-template-columns: 100%;
+    justify-items: center;
   }
 
   .cv-content-team > div {
